@@ -118,7 +118,8 @@ export default class App extends Component {
     this.sEndpoint.on("call_received", (call) => {
       console.log("call_received", call);
       this.call = call;
-      this.onCallReceived(call)
+      // this.onCallReceived(call)
+      console.log(call);
     });
     this.sEndpoint.on("call_changed", (call) => {
       console.log("call_changed", call);
