@@ -1,5 +1,7 @@
 package com.webrtcapp;
-
+import android.view.Window;
+import android.view.WindowManager;
+import android.os.Bundle;
 import com.facebook.react.ReactActivity;
 
 public class MainActivity extends ReactActivity {
@@ -12,4 +14,14 @@ public class MainActivity extends ReactActivity {
   protected String getMainComponentName() {
     return "webrtcApp";
   }
+  // @Override
+  //   public void onCreate(Bundle savedInstanceState) {
+  //       super.onCreate(savedInstanceState);
+
+  //       Window w = getWindow();
+  //       w.setFlags(
+  //           WindowManager.LayoutParams.FLAG_SHOW_WHEN_LOCKED,
+  //           WindowManager.LayoutParams.FLAG_SHOW_WHEN_LOCKED
+  //       );
+  //   }
 }

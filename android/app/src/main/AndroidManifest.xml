@@ -21,6 +21,15 @@
       android:roundIcon="@mipmap/ic_launcher_round"
       android:allowBackup="false"
       android:theme="@style/AppTheme">
+      <service
+            android:name="com.carusto.ReactNativePjSip.PjSipService"
+            android:enabled="true"
+            android:exported="true" />
+        <receiver android:name="com.carusto.ReactNativePjSip.PjSipConnectivityReceiver">
+          <intent-filter>
+            <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+          </intent-filter>
+        </receiver>
       <activity
         android:name=".MainActivity"
         android:label="@string/app_name"
